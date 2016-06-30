@@ -10,19 +10,19 @@
 }
 
 .off-canvas-wrapper{
-	background-color: #222;
+	background-color: royalblue;
 }
 
 /* ************ Nav - Mobile ************ */
 .title-bar{
-	background-color: #222;
+	background-color: royalblue;
 	height: 60px;
 	padding-top: 17px;
 	font-family: Tahoma;
 }
 
 #mobile-menu{
-	background-color: #222;
+	background-color: royalblue;
 	padding: 18px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 #mobile-menu a{
-	color: rgba(255, 255, 255, 0.6);
+	color: white;
 	font-weight: bold;
 	line-height: 2;
 }
@@ -42,13 +42,18 @@
 }
 
 .js-off-canvas-exit{
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(65, 105, 225, 0.3);
+}
+
+.top-bar-right__logo{
+	color: white;
+	font-family: Tahoma;
 }
 
 
 /* ************ Nav - Desktop ************ */
 .nav-desktop{
-	background-color: #222;
+	background-color: royalblue;
 	height: 60px;
 	padding: 0px;
 }
@@ -57,6 +62,7 @@
 	color: white;
 	line-height: 60px;
 	font-family: Tahoma;
+	font-size: 3.0vw;
 }
 
 .nav-desktop .top-bar-right-menu{
@@ -91,7 +97,7 @@
 
 .top-bar-right-menu > li > ul{
 	list-style-type: none;
-	background-color: #222;
+	background-color: royalblue;
 }
 
 .top-bar-right-menu > li > ul > li > a{
@@ -117,27 +123,30 @@
 }
 
 .top-bar-right-menu__itemlink--dropdown--accordionlink > ul{
-	background-color: #222;
+	background-color: royalblue;
 }
 
 .top-bar-right-menu > li > ul > li > a:hover{
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-
 /* ************ Hero ************ */
 .hero{
-	background: #999;
 	padding: 80px 0px;
 	height: auto;
-	background-image: url('../img/footer_lodyas.png');
+	background-image: url('../img/honey_im_subtle.png');
+
 }
 
 .hero h1,
 .hero p{
-	color: rgba(255, 255, 255, 0.8);
+	color: royalblue;
 	max-width: 90%;
 	font-family: Josefin Sans;
+}
+
+.hero h1{
+	font-weight: bold;
 }
 
 /* ************ Main Section ************ */
@@ -147,25 +156,25 @@
 
 /* ************ Footer ************ */
 footer{
-	background-color: #222;
+	background-color: royalblue;
 	padding: 80px 0px;
 }
 
 footer hr{
-	border-color: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.2);
 	margin: 10px 0px;
 }
 
 footer a {
 	display: block;
-	color: rgba(255, 255, 255, 0.6);
+	color: white;
 	font-size: 0.9em;
 	font-family: Tahoma;
 }
 
 footer a span{
 	font-weight: bold;
-	color: rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.5);
 }
 
 footer a:hover{
@@ -178,6 +187,7 @@ footer h4{
 }
 
 /* ************ Media Query ************ */
+
 @media (max-width: 639px) {
 
 	.nav-desktop{
