@@ -1,47 +1,170 @@
-@import 'settings';
-
 /* ************ General ************ */
+*{
+	outline: none;
+}
 
+.wrap{
+	width: 90%;
+	max-width: 11000px;
+	margin: 0px auto;
+}
+
+.off-canvas-wrapper{
+	background-color: #222;
+}
 
 /* ************ Nav - Mobile ************ */
+.title-bar{
+	background-color: #222;
+	height: 60px;
+	padding-top: 17px;
+	font-family: Tahoma;
+}
+
+#mobile-menu{
+	background-color: #222;
+	padding: 18px;
+}
+
+#mobile-menu li{
+	list-style: none;
+	font-family: Tahoma;
+}
+
+#mobile-menu a{
+	color: rgba(255, 255, 255, 0.6);
+	font-weight: bold;
+	line-height: 2;
+}
+
+#mobile-menu a:hover{
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.js-off-canvas-exit{
+	background: rgba(0, 0, 0, 0.5);
+}
 
 
 /* ************ Nav - Desktop ************ */
 .nav-desktop{
-	background-color: #555;
-	height: 80px;
+	background-color: #222;
+	height: 60px;
 	padding: 0px;
 }
 
-.site-logo{
+.top-bar-left__logo{
 	color: white;
-	line-height: 80px;
+	line-height: 60px;
+	font-family: Tahoma;
 }
 
-.nav-desktop .menu-desktop{
-	line-height: 80px;
+.nav-desktop .top-bar-right-menu{
+	line-height: 60px;
 	background-color: transparent;
+	font-family: Tahoma;
 }
 
-.menu > li > a{
+.nav-desktop .top-bar-right-menu__itemlink{
 	display: inline-block;
-	line-height: 80px;
+	line-height: 60px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 	color: white;
 }
 
-.menu >li > a:hover{
+.menu > li > a{
+	display: inline-block;
+	line-height: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: white;
+}
+
+.nav-desktop .top-bar-right-menu__itemlink:hover, .top-bar-right-menu__itemlink--dropdown:hover{
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* ************ Hero ************ */
+.top-bar-right-menu__itemlink--dropdown{
+	font-family: Tahoma;	
+}
 
+.top-bar-right-menu > li > ul{
+	list-style-type: none;
+	background-color: #222;
+}
+
+.top-bar-right-menu > li > ul > li > a{
+	color: white;
+	display: block;
+	height: auto;
+	line-height: 50px;
+	text-align: center;
+	width: 300px;
+}
+
+.top-bar-right-menu > li > ul > li > a:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* ************ Hero ************ */
+.hero{
+	background: #999;
+	padding: 80px 0px;
+	height: auto;
+	background-image: url('../img/footer_lodyas.png');
+}
+
+.hero h1,
+.hero p{
+	color: rgba(255, 255, 255, 0.8);
+	max-width: 90%;
+	font-family: Josefin Sans;
+}
 
 /* ************ Main Section ************ */
-
+.main{
+	padding: 80px 0px;
+}
 
 /* ************ Footer ************ */
+footer{
+	background-color: #222;
+	padding: 80px 0px;
+}
 
+footer hr{
+	border-color: rgba(255, 255, 255, 0.1);
+	margin: 10px 0px;
+}
+
+footer a {
+	display: block;
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 0.9em;
+	font-family: Tahoma;
+}
+
+footer a span{
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+footer a:hover{
+	color: rgba(255, 255, 255, 0.8);
+}
+
+footer h4{
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 1.3em;
+}
 
 /* ************ Media Query ************ */
+@media (max-width: 639px) {
+
+	.nav-desktop{
+		display: none;
+	}
+
+}
